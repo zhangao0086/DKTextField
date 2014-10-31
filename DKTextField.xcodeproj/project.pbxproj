@@ -14,6 +14,7 @@
 		9CA23A271A034794007C9F5E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA23A261A034794007C9F5E /* Images.xcassets */; };
 		9CA23A2A1A034794007C9F5E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CA23A281A034794007C9F5E /* LaunchScreen.xib */; };
 		9CA23A361A034794007C9F5E /* DKTextFieldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA23A351A034794007C9F5E /* DKTextFieldTests.m */; };
+		9CA23A421A03481B007C9F5E /* DKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA23A411A03481B007C9F5E /* DKTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		9CA23A2F1A034794007C9F5E /* DKTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA23A341A034794007C9F5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA23A351A034794007C9F5E /* DKTextFieldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKTextFieldTests.m; sourceTree = "<group>"; };
+		9CA23A401A03481B007C9F5E /* DKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKTextField.h; sourceTree = "<group>"; };
+		9CA23A411A03481B007C9F5E /* DKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		9CA23A181A034794007C9F5E /* DKTextField */ = {
 			isa = PBXGroup;
 			children = (
+				9CA23A3F1A03480E007C9F5E /* Sources */,
 				9CA23A1D1A034794007C9F5E /* AppDelegate.h */,
 				9CA23A1E1A034794007C9F5E /* AppDelegate.m */,
 				9CA23A201A034794007C9F5E /* ViewController.h */,
@@ -117,6 +121,15 @@
 				9CA23A341A034794007C9F5E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CA23A3F1A03480E007C9F5E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9CA23A401A03481B007C9F5E /* DKTextField.h */,
+				9CA23A411A03481B007C9F5E /* DKTextField.m */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA23A421A03481B007C9F5E /* DKTextField.m in Sources */,
 				9CA23A221A034794007C9F5E /* ViewController.m in Sources */,
 				9CA23A1F1A034794007C9F5E /* AppDelegate.m in Sources */,
 				9CA23A1C1A034794007C9F5E /* main.m in Sources */,

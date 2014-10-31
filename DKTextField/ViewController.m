@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "DKTextField.h"
 
 @interface ViewController ()
+
+@property (nonatomic, weak) IBOutlet DKTextField *textField;
 
 @end
 
@@ -22,6 +25,10 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)switchChanged:(UISwitch *)sender {
+    self.textField.secureTextEntry = sender.on;
 }
 
 @end

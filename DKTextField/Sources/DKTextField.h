@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DKTextField.h
 //  DKTextField
 //
 //  Created by 张奥 on 14-10-31.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-- (IBAction)switchChanged:(UISwitch *)sender;
+@interface DKTextField : UITextField
 
 @end
-
