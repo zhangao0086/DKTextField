@@ -35,7 +35,7 @@
     
     self.beginEditingObserver = [[NSNotificationCenter defaultCenter] addObserverForName:UITextFieldTextDidBeginEditingNotification
                                                                                   object:nil queue:nil usingBlock:^(NSNotification *note) {
-                                                                                      if (weakSelf == note.object) {
+                                                                                      if (weakSelf == note.object && weakSelf.isSecureTextEntry) {
                                                                                           weakSelf.text = @"";
                                                                                           [weakSelf insertText:weakSelf.password];
                                                                                       }
