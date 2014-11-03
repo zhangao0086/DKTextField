@@ -49,9 +49,12 @@
 }
 
 - (void)setSecureTextEntry:(BOOL)secureTextEntry {
+    BOOL isFirstResponder = self.isFirstResponder;
     [self resignFirstResponder];
     [super setSecureTextEntry:secureTextEntry];
-    [self becomeFirstResponder];
+    if (isFirstResponder) {
+        [self becomeFirstResponder];
+    }
 }
 
 - (void)dealloc {
